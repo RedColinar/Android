@@ -26,3 +26,8 @@ view和viewGroup还有请求父ViewGroup跳过拦截的能力(parent.requestDisa
  W/MyViewGroup: onTouch: 
  W/MyViewGroup: onTouchEvent: 
  W/MyViewGroup: onClick: 
+
+ 如果用户点击了不再提醒， 则 requestPermission 不会回调 onRequestPermissionsResult，所以 requestPermission 前应该检查
+ shouldShowRequestPermissionRationale(false 表示用户点击了不再提示)
+
+ 图片上传的能力
