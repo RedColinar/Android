@@ -31,3 +31,7 @@ view和viewGroup还有请求父ViewGroup跳过拦截的能力(parent.requestDisa
  shouldShowRequestPermissionRationale(false 表示用户点击了不再提示)
 
  图片上传的能力
+
+git --help stash
+git stash show stash@{1}
+git stash show -p stash@{1}
