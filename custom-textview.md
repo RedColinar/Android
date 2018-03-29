@@ -1,3 +1,21 @@
+首先在`/assets/font/`目录下添加字体文件  
+
+然后在`/attrs.xml`加入自定义属性
+  
+```xml
+<declare-styleable name="FontView">
+    <attr name="fontStyle" format="enum">
+        <enum name="regular" value="0" />
+        <enum name="light" value="1"/>
+        <enum name="thin" value="2" />
+        <enum name="medium" value="3" />
+        <enum name="bold" value="4" />
+    </attr>
+</declare-styleable>
+```
+
+自定义FontView:  
+
 ```java
 public class FontView extends AppCompatTextView {
     private final static int REGULAR = 0;
@@ -37,4 +55,12 @@ public class FontView extends AppCompatTextView {
         typedArray.recycle();
     }
 }
+```
+使用方法:
+```xml
+    <FontView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strings"
+        app:fontStyle="medium" />
 ```
