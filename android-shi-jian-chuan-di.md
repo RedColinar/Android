@@ -35,3 +35,13 @@ view和viewGroup还有请求父ViewGroup跳过拦截的能力(parent.requestDisa
 git --help stash
 git stash show stash@{1}
 git stash show -p stash@{1}
+
+EditText:
+isFocusable()
+isFocusableInTouchMode()
+
+setFocusable()
+setFocusableInTouchMode()
+
+requestFocus()
+requestFocusFromTouch()
