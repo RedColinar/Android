@@ -5,3 +5,4 @@
 * [自定义TextView](custom-textview.md)
 * [Java Generic](java-generic.md)
 * [Android手机录屏，转为gif](mp4-to-gif.md)
+* [远程主机常用命令](linux-command.md)
