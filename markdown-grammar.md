@@ -60,6 +60,8 @@ function A() {
 space + space + Enter -> 换行  
 &ensp;一个空格  
 &emsp;两个空格  
+指定长宽的图片  
+<img src="./screenshot/1.gif" width = "329" height = "329" align=center />
   
   [更多MD语法](https://www.appinn.com/markdown/#p)
 
