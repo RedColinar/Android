@@ -68,4 +68,7 @@ for(Object name: allNames) {
 
 结论
 JAVA泛型通配符的使用规则就是赫赫有名的“PECS”(Producer Extends, Consumer Super)  
-（生产者使用“? extends T”通配符，消费者使用“? super T”通配符）。
+（生产者使用“? extends T”通配符，消费者使用“? super T”通配符）。  
+
+1. 如果想遍历collection，并对每一项元素操作时，此时这个集合是生产者（生产出可以操作的元素），应该使用 Collection<? extends Thing>.  
+2. 如果你是想添加元素到collection中去，那么此时集合是消费者（消费元素就是添加元素），应该使用Collection<? super Thing>
