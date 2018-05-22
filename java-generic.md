@@ -1,3 +1,4 @@
+# 1. 泛型通配符与PECS
 List泛型转换需要用到通配符 `?`
 ```java
 A implements Group
@@ -71,4 +72,45 @@ JAVA泛型通配符的使用规则就是赫赫有名的“PECS”(Producer Exten
 （生产者使用“? extends T”通配符，消费者使用“? super T”通配符）。  
 
 1. 如果想遍历collection，并对每一项元素操作时，此时这个集合是生产者（生产出可以操作的元素），应该使用 Collection<? extends Thing>.  
-2. 如果你是想添加元素到collection中去，那么此时集合是消费者（消费元素就是添加元素），应该使用Collection<? super Thing>
+2. 如果你是想添加元素到collection中去，那么此时集合是消费者（消费元素就是添加元素），应该使用Collection<? super Thing>  
+
+# 2. 泛型方法  
+
+```java
+/**
+ * 泛型方法的基本介绍
+ * @param tClass 传入的泛型实参
+ * @return T 返回值为T类型
+ * 说明：
+ *     1）public 与 返回值中间<T>非常重要，可以理解为声明此方法为泛型方法。
+ *     2）只有声明了<T>的方法才是泛型方法，泛型类中的使用了泛型的成员方法并不是泛型方法。
+ *     3）<T>表明该方法将使用泛型类型T，此时才可以在方法中使用泛型类型T。
+ *     4）与泛型类的定义一样，此处T可以随便写为任意标识，常见的如T、E、K、V等形式的参数常用于表示泛型。
+ */
+public <T> T genericMethod(Class<T> tClass)throws InstantiationException ,
+  IllegalAccessException{
+        T instance = tClass.newInstance();
+        return instance;
+}
+```
+# 3. 多泛型变量  
+
+类泛型的多泛型变量  
+```java
+class MorePoint<T, U>{  
+}  
+```
+方法泛型的多类型变量  
+```java
+public class Util {
+    public static <K, V> void compare(Pair<K, V> p1, Pair<K, V> p2) {
+        ...
+    }
+}
+```
+
+## 常见泛型字母表示
+* E — Element，常用在java Collection里，如：List<E>,Iterator<E>,Set<E>
+* K,V — Key，Value，代表Map的键值对
+* N — Number，数字
+* T — Type，类型，如String，Integer等等
