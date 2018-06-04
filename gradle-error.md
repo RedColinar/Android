@@ -16,3 +16,12 @@ jcenter {
     url "http://jcenter.bintray.com/"
 }
 ```
+
+## 代理导致的问题
+
+Android开发中 可以设置代理的地方有三处：  
+1. 操作系统设置的代理  
+2. Android Studio -> File -> Settings -> Http Proxy  
+3. Gradle 设置的代理 C:\Users\Administrator\\.gradle\gradle.properties
+
+任何代理发生了问题，可以在这三处排查
