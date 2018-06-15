@@ -10,3 +10,5 @@
 * [面向对象六大原则](OOP-principles.md)
 * [UML类图](uml.md)
 * [Gradle常见error](gradle-error.md)
+* [sql练习](sql-practice.md)
+* [动态添加View例子](add-view-dynamicly.md)
