@@ -22,7 +22,7 @@ public class StaticTest {
 
     StaticTest() {
         System.out.println("3");
-        System.out.println("a = " + a + ",b = " + b);
+        System.out.println("a = " + a + ",b = " + b + ",c = " + c);
     }
 
     public static void staticFunction() {
@@ -31,6 +31,7 @@ public class StaticTest {
 
     int a = 110;
     static int b = 112;
+    static final int c = 114;
 }
 ```  
 
@@ -38,7 +39,7 @@ public class StaticTest {
 ```java  
 2
 3
-a = 110,b = 0
+a = 110,b = 0,c = 114
 1
 4
 ```  
