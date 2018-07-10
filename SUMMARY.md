@@ -10,3 +10,4 @@
 * [面向对象六大原则](OOP-principles.md)
 * [UML类图](uml.md)
 * [Gradle常见error](gradle-error.md)
+* [如何使用Rxjava进行多线程切换](http://www.infoq.com/cn/articles/multi-threading-in-android-with-rxjava-2)
