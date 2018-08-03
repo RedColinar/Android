@@ -74,7 +74,7 @@ JAVA泛型通配符的使用规则就是赫赫有名的“PECS”(Producer Exten
 1. 如果想遍历collection，并对每一项元素操作时，此时这个集合是生产者（生产出可以操作的元素），应该使用 Collection<? extends Thing>.  
 2. 如果你是想添加元素到collection中去，那么此时集合是消费者（消费元素就是添加元素），应该使用Collection<? super Thing>  
 
-# 2. 泛型方法  
+# 2. 泛型方法 和 静态泛型方法  
 
 ```java
 /**
@@ -88,10 +88,16 @@ JAVA泛型通配符的使用规则就是赫赫有名的“PECS”(Producer Exten
  *     4）与泛型类的定义一样，此处T可以随便写为任意标识，常见的如T、E、K、V等形式的参数常用于表示泛型。
  */
 public <T> T genericMethod(Class<T> tClass)throws InstantiationException ,
-  IllegalAccessException{
+  IllegalAccessException {
         T instance = tClass.newInstance();
         return instance;
 }
+/** 注意 static 关键字在最前面 */
+public static <T> T genericMethod(Class<T> tClass)throws InstantiationException , IllegalAccessException {
+        T instance = tClass.newInstance();
+        return instance;
+}
+
 ```
 # 3. 多泛型变量  
 
