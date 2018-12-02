@@ -1,3 +1,5 @@
+
+
 类之间大体分为5种关系：  
 <img src="./assets/uml-all-relationship.png" align=center />  
 
@@ -87,4 +89,7 @@ public class Person {
 
 实现（Realization）：类实现接口属于这种关系
 
-泛化（Generalization）：即 `is a` 关系，类继承抽象类，类继承父类都属于这种关系
+泛化（Generalization）：即 `is a` 关系，类继承抽象类，类继承父类都属于这种关系  
+
+---
+_更多内容：https://www.cnblogs.com/shindo/p/5579191.html_
