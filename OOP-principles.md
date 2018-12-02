@@ -1,13 +1,20 @@
 # 面向对象六大原则  
-1. 单一职责原则(Single Responsibility Principle)  
+## 1. 单一职责原则(Single Responsibility Principle)  
 > 就一个类而言，应该仅有一个引起变化的原因。  
-2. 开闭原则(Open Close Principle)  
+## 2. 开闭原则(Open Close Principle)  
 > 软件中的对象（类、模块、函数等）应该对于拓展是开放的，但是对于修改是封闭的。让程序更稳定，更灵活。  
-3. 里氏替换原则(Liskov Substitution Principle)  
+## 3. 里氏替换原则(Liskov Substitution Principle)  
 > 所有引用基类的地方必须能透明地使用其子类的对象。构建拓展性好的系统。  
-4. 依赖倒置原则(Dependence Inversion Principle)  
-> 模块间的依赖通过抽象发生， 实现类之间不发生直接的依赖关系， 其依赖关系是通过接口或抽象类产生的。依赖抽象，不依赖实现。是一种特定的解耦方式。  
-5. 接口隔离原则(Interface Segregation Principle)  
+## 4. 依赖倒置原则(Dependence Inversion Principle)  
+> 1).  模块间的依赖通过抽象发生， 实现类之间不发生直接的依赖关系， 其依赖关系是通过接口或抽象类产生的。  
+> 2).  依赖抽象，不依赖实现。是一种特定的解耦方式。  
+
+  传递依赖的方式：  
+  1. 构造函数传递依赖  
+  2. setter传递依赖  
+  3. 接口声明依赖  
+
+## 5. 接口隔离原则(Interface Segregation Principle)  
 > 类间的依赖关系应建立在最小的接口上。让系统更好的解耦，方便重构，更改和重新部署。  
-6. 迪米特原则 (Law of Demeter)  
+## 6. 迪米特原则 (Law of Demeter)  
 > 一个对象应该对其他对象有最少的了解。一个类应该对自己需要耦合或调用的类知道的最少，类的内部如何实现与调用者或者依赖者没关系，调用者只需要知道他需要的方法。
