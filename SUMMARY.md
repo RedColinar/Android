@@ -13,4 +13,5 @@
 * [如何使用Rxjava进行多线程切换](http://www.infoq.com/cn/articles/multi-threading-in-android-with-rxjava-2)
 * [sql练习](sql-practice.md)
 * [动态添加View例子](add-view-dynamicly.md)
+* [java 代理模式](http://www.importnew.com/26116.html)
 * [markdown语法](markdown-grammar.md)
