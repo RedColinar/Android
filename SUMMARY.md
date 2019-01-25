@@ -15,3 +15,4 @@
 * [动态添加View例子](add-view-dynamicly.md)
 * [java 代理模式](http://www.importnew.com/26116.html)
 * [markdown语法](markdown-grammar.md)
+* [android自动化测试](automation-test.md)
