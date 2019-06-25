@@ -164,6 +164,13 @@ public class Util {
 
 通俗的说 List<String> 和 List<Integer> 编译后都是 List<Object>
 
+// 可以执行
+List<Fruit> fruits = (ArrayList) new ArrayList<Apple>();
+fruits.add(new Banana())
+
+// 异常
+List<Fruit> fruits = new ArrayList<Apple>()
+
 ---
 _更多内容： https://blog.csdn.net/briblue/article/details/76736356_  
 _https://www.zhihu.com/people/pang-pang-37-37/activities_  
